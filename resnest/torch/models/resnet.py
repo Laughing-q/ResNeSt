@@ -58,7 +58,7 @@ class Bottleneck(nn.Module):
         self.avd_first = avd_first
 
         if self.avd:
-            self.avd_layer = nn.AvgPool2d(3, stride, padding=1)
+            self.avd_layer = nn.AvgPool2d(2, stride, padding=0)
             stride = 1
 
         if dropblock_prob > 0.0:
