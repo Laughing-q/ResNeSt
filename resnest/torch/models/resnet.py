@@ -78,7 +78,7 @@ class Bottleneck(nn.Module):
 
         if self.avd:
             self.avd_layer = nn.AvgPool2d(
-                3, stride, ceil_mode=False, count_include_pad=False
+                3, stride, ceil_mode=True, count_include_pad=False
             )
             # self.avd_layer = nn.AvgPool2d(
             #     3, stride, padding=1,
